@@ -14,14 +14,22 @@
   "packageRules": [
     {
       "matchManagers": [
-        "dockerfile",
         "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "automerge": true
+    },
+    {
+      "matchManagers": [
+        "dockerfile"
       ],
       "matchUpdateTypes": [
         "pinDigest",
         "digest",
-        "patch",
-        "minor",
         "major"
       ],
       "automerge": true
