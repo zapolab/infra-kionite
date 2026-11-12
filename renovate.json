@@ -9,13 +9,13 @@
         "/(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$/"
       ]
   },
-  "pinDigests": true,
   "platformAutomerge": true,
   "packageRules": [
     {
       "matchManagers": [
         "github-actions"
       ],
+      "pinDigests": false,
       "matchUpdateTypes": [
         "patch",
         "minor",
@@ -27,6 +27,7 @@
       "matchManagers": [
         "dockerfile"
       ],
+      "pinDigests": true,
       "matchUpdateTypes": [
         "pinDigest",
         "digest"
