@@ -9,7 +9,6 @@
         "/(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$/"
       ]
   },
-  "platformAutomerge": true,
   "packageRules": [
     {
       "matchManagers": [
