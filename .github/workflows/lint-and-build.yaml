@@ -1,4 +1,4 @@
-name: Lint, build and publish
+name: Build image
 
 on:
   push:
@@ -9,8 +9,6 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - "Dockerfile"
   workflow_dispatch:
 
 jobs:
