@@ -29,8 +29,7 @@
       ],
       "matchUpdateTypes": [
         "pinDigest",
-        "digest",
-        "major"
+        "digest"
       ],
       "automerge": true
     }
