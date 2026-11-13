@@ -27,6 +27,8 @@ RUN dnf5 config-manager addrepo --from-repofile=https://pkgs.tailscale.com/stabl
   && dnf5 install -y \
   fish \
   podman-compose \
+  ifuse \
+  libimobiledevice-utils \
   tailscale \
   gaze \
   gaze-gui \
