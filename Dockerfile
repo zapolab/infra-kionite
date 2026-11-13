@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-kinoite:45@sha256:f857f6c5da48a7c39721e40de51d9c0fef446a25e0360be4fb8964cbdf48f537
+FROM quay.io/fedora/fedora-kinoite:45@sha256:cbc9be8afaf179b2e9e7ce71412a01fd4264c711925e10e75017553ff124af31
 
 RUN dnf5 rm -y \
   # Remove intel/nvidia driver and deamons
