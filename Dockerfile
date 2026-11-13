@@ -1,7 +1,7 @@
 FROM quay.io/fedora/fedora-kinoite:45@sha256:cbc9be8afaf179b2e9e7ce71412a01fd4264c711925e10e75017553ff124af31
 
 # Remove unused packages
-RUN dnf5 rm -y --skip-unavailable \
+RUN dnf5 rm -y \
   firefox \
   firefox-langpacks \
   fedora-bookmarks \
