@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-kinoite:45@sha256:4e86e68116ee64156b9df71a21c3904d37d4415e6f2b12b6fa308bae49c9a9de
+FROM quay.io/fedora/fedora-kinoite:45@sha256:f87601299d5b427d81a77ee77128d1548b814727c8366345ded70367d8b4a633
 
 # Remove unused packages
 RUN dnf5 rm -y \
