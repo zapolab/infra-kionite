@@ -33,7 +33,6 @@ RUN dnf5 config-manager addrepo --from-repofile=https://pkgs.tailscale.com/stabl
     tailscale \
     gaze \
     gaze-gui \
-    gaze-kde \
     && systemctl enable tailscaled \
     && dnf5 clean all \
     && rm -rf /var/cache/libdnf5/* /var/log/dnf*
