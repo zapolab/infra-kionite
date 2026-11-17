@@ -6,6 +6,7 @@ RUN dnf5 rm -y \
     firefox-langpacks \
     fedora-bookmarks \
     fedora-chromium-config \
+    gwenview \
     toolbox \
     plasma-discover-rpm-ostree \
     openssh-server \
@@ -20,6 +21,9 @@ RUN dnf5 rm -y \
     default-fonts-cjk-serif \
     && dnf5 clean all \
     && rm -rf /var/cache/libdnf5/* /var/log/dnf*
+
+# Enable flathub
+RUN flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # Install packages
 RUN dnf5 config-manager addrepo --from-repofile=https://pkgs.tailscale.com/stable/fedora/tailscale.repo \
