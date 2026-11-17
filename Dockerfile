@@ -23,16 +23,16 @@ RUN dnf5 rm -y \
 
 # Install packages
 RUN dnf5 config-manager addrepo --from-repofile=https://pkgs.tailscale.com/stable/fedora/tailscale.repo \
+    && dnf5 install -y "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm" \
     && dnf5 copr enable -y gundulabs/gaze \
     && dnf5 install -y \
-    "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm" \
     libheif-freeworld \
     libheif-tools \
+    ifuse \
+    libimobiledevice-utils \
     vim \
     fish \
     podman-compose \
-    ifuse \
-    libimobiledevice-utils \
     tailscale \
     gaze \
     gaze-gui \
