@@ -18,7 +18,7 @@ RUN dnf5 rm -y \
     default-fonts-cjk-mono \
     default-fonts-cjk-sans \
     default-fonts-cjk-serif \
-    && flatpak uninstall -y gwenview \
+    && flatpak uninstall -y org.kde.gwenview \
     && dnf5 clean all \
     && rm -rf /var/cache/libdnf5/* /var/log/dnf*
 
